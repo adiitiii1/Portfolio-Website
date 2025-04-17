@@ -30,6 +30,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     width: 90%;
     margin: auto;
   }
@@ -43,6 +44,7 @@
   .nav-links {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
   }
   
