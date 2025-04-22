@@ -3,19 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
+  <title>Aditi Chaubey | Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <nav class="navbar">
     <div class="container">
       <h1 class="logo">Aditi Chaubey</h1>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li class="dropdown">
-          <a href="#">Portfolio ▾</a>
+          <a href="#">Portfolio <i class="fas fa-chevron-down"></i></a>
           <ul class="dropdown-menu">
             <li><a href="#projects">Projects</a></li>
             <li><a href="#education">Education</a></li>
@@ -23,7 +28,6 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#achievements">Achievements</a></li>
             <li><a href="#hobbies">Interests</a></li>
-            
           </ul>
         </li>
         <li><a href="#contact">Contact</a></li>
@@ -33,124 +37,298 @@
   
 
   <section id="home" class="home-section">
+    <div class="hero-overlay"></div>
     <img src="hero.jpeg" alt="Hero Image" class="hero-img">
     <div class="home-content">
-      <h2>Aditi Chaubey</h2>
-      <p>Student BBA DBE | Zonal Representative | HR Intern
-        <a href="https://faamg.dev/" target="_blank" style="color: #f7abd5; text-decoration: underline;">
-        @FAAMG.dev
-      </a>
-      </p>
-    </div>
-  </section>
-
-  <section id="about" class="section">
-    <div class="container about-container">
-      <img src="about.jpeg" alt="About Me" class="about-img">
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>I'm Aditi Chaubey, a BBA DBE student at IIM Bangalore with a deep passion for business, entrepreneurship, and human resource management. Currently working as an HR Generalist at FAAMG.dev, I thrive on navigating the dynamic intersections of people, strategy, and innovation. Constantly upskilling to stay ahead in today's fast-evolving market, I enjoy exploring new opportunities that challenge me to think strategically and act decisively. With a strong foundation in business administration and hands-on experience in HR, I'm eager to contribute to impactful business initiatives and entrepreneurial ventures that drive growth and create lasting value.</p>
+      <div class="typing-container">
+        <h1 id="typed-name" class="home-title"></h1>
+        <span class="typed-cursor">|</span>
+      </div>
+      
+      <div class="typing-container">
+        <p id="typed-subtitle" class="home-subtitle"></p>
+        <span class="typed-cursor">|</span>
+      </div>
+      
+      <div class="float-element">
+        <a href="#about" class="cta-button">Explore More <i class="fas fa-arrow-down"></i></a>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="section">
+  <section id="about" class="section">
     <div class="container">
-      <h2>Projects</h2>
-      <ul class="project-list">
-        <li>
+      <h2 class="section-title"><span>About Me</span></h2>
+      <div class="about-container">
+        <div class="about-img-container">
+          <img src="about.jpeg" alt="About Me" class="about-img">
+        </div>
+        <div class="about-text">
+          <p>I'm Aditi Chaubey, a BBA DBE student at IIM Bangalore with a deep passion for business, entrepreneurship, and human resource management. Currently working as an HR Generalist at FAAMG.dev, I thrive on navigating the dynamic intersections of people, strategy, and innovation. Constantly upskilling to stay ahead in today's fast-evolving market, I enjoy exploring new opportunities that challenge me to think strategically and act decisively. With a strong foundation in business administration and hands-on experience in HR, I'm eager to contribute to impactful business initiatives and entrepreneurial ventures that drive growth and create lasting value.</p>
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <i class="fas fa-graduation-cap"></i>
+              <h4>IIM Bangalore</h4>
+              <p>BBA DBE Student</p>
+            </div>
+            <div class="highlight-card">
+              <i class="fas fa-briefcase"></i>
+              <h4>FAAMG.dev</h4>
+              <p>HR Generalist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section dark-section">
+    <div class="container">
+      <h2 class="section-title"><span>Projects</span></h2>
+      <div class="card-container">
+        <div class="project-card">
+          <div class="card-icon">
+            <i class="fas fa-link"></i>
+          </div>
           <h3>CoreLink Services</h3>
-          <p>Actively contributed to CoreLink’s mission of delivering customized business solutions by engaging with clients and understanding their unique needs. Successfully closed two clients by offering tailored services.</p>
-        </li>
-        <li>
+          <p>Actively contributed to CoreLink's mission of delivering customized business solutions by engaging with clients and understanding their unique needs. Successfully closed two clients by offering tailored services.</p>
+        </div>
+        <div class="project-card">
+          <div class="card-icon">
+            <i class="fas fa-users"></i>
+          </div>
           <h3>Group Coordinator</h3>
-          <p>Co-founded and actively contributed to building ConnectEd. Led initiatives to structure and moderate weekly discussion , enabling members to enhance communication and analytical skills.</p>
-        </li>
-        
-      </ul>
+          <p>Co-founded and actively contributed to building ConnectEd. Led initiatives to structure and moderate weekly discussion, enabling members to enhance communication and analytical skills.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="education" class="section">
     <div class="container">
-      <h2>Educational Qualifications</h2>
-      <ul class="edu-list">
-        <li><strong>Bachelor of Business Administration - Digital Business & Entrepreneurship</strong><br>Indian Institute of Management, Bangalore | 2023 – Present</li>
-        <li><strong>Class XII [CBSE]</strong><br>Sunbeam School, Narayanpur | 90.4% | 2023</li>
-        <li><strong>Class X [CBSE]</strong><br>Sunbeam School, Narayanpur | 91.8% | 2021</li>
-      </ul>
+      <h2 class="section-title"><span>Educational Qualifications</span></h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2023 – Present</div>
+          <div class="timeline-content">
+            <h3>Bachelor of Business Administration - Digital Business & Entrepreneurship</h3>
+            <p>Indian Institute of Management, Bangalore</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2023</div>
+          <div class="timeline-content">
+            <h3>Class XII [CBSE]</h3>
+            <p>Sunbeam School, Narayanpur | 90.4%</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2021</div>
+          <div class="timeline-content">
+            <h3>Class X [CBSE]</h3>
+            <p>Sunbeam School, Narayanpur | 91.8%</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="volunteer" class="section">
+  <section id="volunteer" class="section dark-section">
     <div class="container">
-      <h2>Volunteer Experience</h2>
-      <ul class="volunteer-list">
-        <li><strong>Group Coordinator</strong> – ConnectEd Community | Oct 2024 – Present<br>Led weekly discussions on business and personal development topics. Mentored students to develop critical thinking and communication skills.</li>
-        <li><strong>Zonal Representative (North Zone 2)</strong><br>Represented the community in North Zone 2, ensuring consistent engagement.</li>
-        <li><strong>Cultural Head</strong> – Sunbeam School | 2022 – 2023<br>Led and coordinated cultural events, interacting with teachers and vendors.</li>
-      </ul>
+      <h2 class="section-title"><span>Volunteer Experience</span></h2>
+      <div class="card-container">
+        <div class="experience-card">
+          <h3>Group Coordinator – ConnectEd Community</h3>
+          <div class="experience-date">Oct 2024 – Present</div>
+          <p>Led weekly discussions on business and personal development topics. Mentored students to develop critical thinking and communication skills.</p>
+        </div>
+        <div class="experience-card">
+          <h3>Zonal Representative (North Zone 2)</h3>
+          <div class="experience-date">Dec 2024 – Present</div>
+          <p>Represented the community in North Zone 2, ensuring consistent engagement.</p>
+        </div>
+        <div class="experience-card">
+          <h3>Cultural Head – Sunbeam School</h3>
+          <div class="experience-date">2022 – 2023</div>
+          <p>Led and coordinated cultural events, interacting with teachers and vendors.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="skills" class="section">
     <div class="container">
-      <h2>Skills</h2>
-      <p><strong>Technical Skills:</strong> MS Word, Excel, PowerPoint, Canva, Spreadsheet</p>
-      <p><strong>Soft Skills:</strong> Leadership, Communication, Presentation, Teamwork, Technical Recruiting, Public Speaking, Event Planning</p>
+      <h2 class="section-title"><span>Skills</span></h2>
+      <div class="skills-container">
+        <div class="skills-column">
+          <h3>Technical Skills</h3>
+          <ul class="skills-list">
+            <li><span>MS Word</span><div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div></li>
+            <li><span>Excel</span><div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div></li>
+            <li><span>PowerPoint</span><div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div></li>
+            <li><span>Canva</span><div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div></li>
+            <li><span>Spreadsheet</span><div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div></li>
+          </ul>
+        </div>
+        <div class="skills-column">
+          <h3>Soft Skills</h3>
+          <div class="soft-skills">
+            <span class="skill-tag">Leadership</span>
+            <span class="skill-tag">Communication</span>
+            <span class="skill-tag">Presentation</span>
+            <span class="skill-tag">Teamwork</span>
+            <span class="skill-tag">Technical Recruiting</span>
+            <span class="skill-tag">Public Speaking</span>
+            <span class="skill-tag">Event Planning</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="achievements" class="section">
+  <section id="achievements" class="section dark-section">
     <div class="container">
-      <h2>Achievements</h2>
-      <ul class="achievements-list">
-        <li>1st Position: Proverb Enactment, Poem Enactment, Drawing Competition</li>
-        <li>Awards: "Woman of the Match", "Star Child", "Genius at Work"</li>
-        <li>Represented school in World Heritage Sites & Book Dissemination</li>
-        <li>Participant: MUNs, National Youth Parliament, Debates, Quiz Competitions</li>
-        <li>Led multiple school-level sports and cultural events</li>
-      </ul>
+      <h2 class="section-title"><span>Achievements</span></h2>
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <i class="fas fa-trophy"></i>
+          <h3>1st Position</h3>
+          <p>Proverb Enactment, Poem Enactment, Drawing Competition</p>
+        </div>
+        <div class="achievement-card">
+          <i class="fas fa-award"></i>
+          <h3>Awards</h3>
+          <p>"Woman of the Match", "Star Child", "Genius at Work"</p>
+        </div>
+        <div class="achievement-card">
+          <i class="fas fa-school"></i>
+          <h3>School Representation</h3>
+          <p>World Heritage Sites & Book Dissemination</p>
+        </div>
+        <div class="achievement-card">
+          <i class="fas fa-microphone"></i>
+          <h3>Competitions</h3>
+          <p>MUNs, National Youth Parliament, Debates, Quiz</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="hobbies" class="section">
-    <div class="container">
-      <h2>Hobbies & Interests</h2>
-      <ul>
-        <li>Reading Books</li>
-        <li>Painting and Crafting</li>
-        <li>Dancing</li>
-        <li>Maintaining Journal</li>
-        <li>Writing Poetry</li>
-      </ul>
+  <div class="hobbies-section">
+    <h2>Hobbies & Interests</h2>
+    
+    <div class="hobbies-ticker-container">
+      <div class="hobbies-ticker">
+        <!-- Hobby Items -->
+        <div class="hobby-ticker-item">
+          <div class="hobby-ticker-icon">📚</div>
+          <p>Reading Books</p>
+        </div>
+        
+        <div class="hobby-ticker-item">
+          <div class="hobby-ticker-icon">🖌️</div>
+          <p>Painting and Crafting</p>
+        </div>
+        
+        <div class="hobby-ticker-item">
+          <div class="hobby-ticker-icon">🎵</div>
+          <p>Dancing</p>
+        </div>
+        
+        <div class="hobby-ticker-item">
+          <div class="hobby-ticker-icon">📓</div>
+          <p>Maintaining Journal</p>
+        </div>
+        
+        <div class="hobby-ticker-item">
+          <div class="hobby-ticker-icon">✒️</div>
+          <p>Writing Poetry</p>
+        </div>
+        
+        <!-- Duplicate items to create continuous scroll effect -->
+        <div class="hobby-ticker-item">
+          <div class="hobby-ticker-icon">📚</div>
+          <p>Reading Books</p>
+        </div>
+        
+        <div class="hobby-ticker-item">
+          <div class="hobby-ticker-icon">🖌️</div>
+          <p>Painting and Crafting</p>
+        </div>
+        
+        <!-- Add more duplicates as needed -->
+      </div>
     </div>
-  </section>
+  </div>
   
-  <!-- Co-Curricular Section -->
-  <section id="cocurricular" class="section">
+  <section id="cocurricular" class="section dark-section">
     <div class="container">
-      <h2>Co-Curricular Positions</h2>
-      <ul>
-        <li>Vice-Cultural Head – Sunbeam School (2021–22)</li>
-        <li>Anchor – Hosted Annual Day, Farewell & Cultural Fests</li>
-      </ul>
+      <h2 class="section-title"><span>Co-Curricular Positions</span></h2>
+      <div class="positions-container">
+        <div class="position-card">
+          <h3>Vice-Cultural Head</h3>
+          <p>Sunbeam School (2021–22)</p>
+        </div>
+        <div class="position-card">
+          <h3>Anchor</h3>
+          <p>Hosted Annual Day, Farewell & Cultural Fests</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="contact" class="section contact-section">
     <div class="container">
-      <h2>Contact Info</h2>
-      <p>📞Mobile No. 6307XXXXXX</p>
-      <p>📩Email: <a href="mailto:aditichaubey01@gmail.com">aditichaubey01@gmail.com</a></p>
-      <p>🔗LinkedIn: <a href="https://www.linkedin.com/in/aditichaubeyiim?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">AditiChaubey</a></p>
-      <p>💻GitHub: <a href="https://github.com/adiitiii1" target="_blank">@adiitiii1</a></p>
+      <h2 class="section-title"><span>Contact Info</span></h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p> Mobile No. 6307XXXXXX</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p> Email: <a href="mailto:aditichaubey01@gmail.com">aditichaubey01@gmail.com</a></p>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <p> LinkedIn: <a href="https://www.linkedin.com/in/aditichaubeyiim?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">AditiChaubey</a></p>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <p> GitHub: <a href="https://github.com/adiitiii1" target="_blank">@adiitiii1</a></p>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 [Aditi Chaubey]. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Aditi Chaubey. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
